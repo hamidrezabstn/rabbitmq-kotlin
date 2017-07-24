@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  app:
+    build: .
+    restart: always
+    #working_dir: /project
+    ports:
+      - "5672:5672"
+      - "5671:5671"
+      - "15672:15672"
